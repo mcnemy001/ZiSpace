@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background_1">#EDE9E6</color>
+    <color name="background_2">#393533</color>">
+
+    <!-- Text Colors -->
+    <color name="text_primary">#EDE9E6</color>
+    <color name="text_primary_dark">#393533</color>
+    <color name="text_secondary">#CCCCCC</color>
+    <color name="text_secondary_dark">#666666</color>
+
+    <!-- Indicator Colors -->
+    <color name="indicator_active">#CCC5C5</color>
+    <color name="indicator_active_secondary">#393533</color>
+    <color name="indicator_inactive">#67605A</color>
+
+    <!-- Button Colors -->
+    <color name="btn_primary">#DF7D5A</color>
+    <color name="btn_secondary">#EDE9E6</color>
+    <color name="btn_secondary_dark">#393533</color>">
+
+    <color name="bottom_nav_selected">#393533</color>
+    <color name="bottom_nav_unselected">#393533</color>
+
+</resources>

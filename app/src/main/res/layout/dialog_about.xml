@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:padding="24dp">
+
+    <!-- App Icon -->
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_home_light"
+        android:background="@drawable/circle_background"
+        android:padding="16dp"
+        android:contentDescription="@string/app_name" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/app_name_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary_dark"
+        android:fontFamily="@font/quicksand_bold" />
+
+    <!-- Version -->
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:text="@string/app_version"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary_dark"
+        android:fontFamily="@font/quicksand_medium"
+        android:alpha="0.7" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/text_primary_dark"
+        android:alpha="0.2" />
+
+    <!-- App Description -->
+    <TextView
+        android:id="@+id/app_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_description"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary_dark"
+        android:fontFamily="@font/quicksand_medium"
+        android:gravity="center"
+        android:alpha="0.8"
+        android:lineSpacingExtra="4dp" />
+
+    <!-- Developer Info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/info_card_background"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/developed_by"
+            android:textSize="12sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/quicksand_medium"
+            android:alpha="0.6" />
+
+        <TextView
+            android:id="@+id/developer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/developer_name"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/quicksand_bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/built_with"
+            android:textSize="12sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/quicksand_medium"
+            android:alpha="0.6" />
+
+        <TextView
+            android:id="@+id/tech_stack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/tech_stack"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/quicksand_bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/copyright"
+            android:textSize="12sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/quicksand_medium"
+            android:alpha="0.6" />
+
+    </LinearLayout>
+
+    <!-- Close Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/close_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/background_2"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/close"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
